@@ -9,12 +9,11 @@
 7. [Application](#application)
 8. [Tech Stack](#tech-stack)
 9. [Contributors](#contributors)
-10. [Getting Started](#getting-started)
-11. [Acknowledgments](#acknowledgments)
+10. [Acknowledgments](#acknowledgments)
 
 ## **Project Overview**
 -------------------------------------
-This project focuses on classifying infant cries into four categories: hungry, belly pain, discomfort, and tired. It leverages the power of deep learning to understand and differentiate the subtle nuances in infant cries, providing insights that could be invaluable for parents.
+This project focuses on building an app classifying infant cries into four categories: hungry, belly pain, discomfort, and tired. It leverages the power of deep learning to understand and differentiate the subtle nuances in infant cries, providing insights that could be invaluable for parents.
 
 ## **Dataset**
 -------------------------------------
@@ -38,9 +37,9 @@ For more info on BandPass Filter, look through this documentation: [**audiomenta
 ------------------------------------
 Given the limited size of the dataset, several augmentation techniques were employed to enrich the data, including Time Stretch, Background Noise, and Pitch Shift. These methods help to simulate a wider range of crying scenarios, thereby improving the robustness of the model.
 
-## **Model Architecture**
+## **Models used**
 -----------------------------------
-The project utilized the Audio Spectrogram Transformer (AST) as the primary model due to its state-of-the-art performance in audio classification tasks. In addition to AST, subsidiary experiments were conducted with other models such as VGG16 (using MFCC features), a Multi-input layer DNN (with inputs from the YAMnet model), and U-net (trained on unlabeled data using reconstructive loss). These exploratory models provided valuable insights, though AST remained the best performer.
+The project utilized the **Audio Spectrogram Transformer (AST)** as the primary model due to its state-of-the-art performance in audio classification tasks. In addition to AST, subsidiary experiments were conducted with other models such as **VGG16 (using MFCC features)**, **a Multi-input layer DNN (with inputs from the YAMnet model)**, and **U-net (trained on unlabeled data using reconstructive loss)**. These exploratory models provided valuable insights, though **AST** remained the best performer.
 
 **Pretrained Models Used**
 >1. Audio Spectrogram Transformers(AST): [**AST HuggingFace**](https://huggingface.co/docs/transformers/model_doc/audio-spectrogram-transformer)
@@ -48,7 +47,14 @@ The project utilized the Audio Spectrogram Transformer (AST) as the primary mode
 
 ## **Application**
 -----------------------------------
-An application was developed to analyze infant cries in real-time. The model runs on a local server, with inference data sent to the client side using FastAPI and ngrok. To run the demo app, follow the instruction in the **[Getting Started](#getting-started)** section
+<p align="center">
+  <img src="https://github.com/Haikoo96/aiffelton_babycry_classification/blob/main/app_process.png" />
+</p>
+The app was developed to analyze infant cries in real-time. The model runs on a local pc server(localhost), with inference data sent to the client side using FastAPI and ngrok. The image above describes the process of the app.
+
+**[APP DEMO VIDEO LINK](https://youtube.com/shorts/CRE3qGju1T0?feature=share)**
+- Bear in mind that the video is in Korean
+
 
 ## **Tech Stack**
 ----------------------------------
@@ -66,20 +72,6 @@ An application was developed to analyze infant cries in real-time. The model run
 - **Youngjin Kim ([github link](https://github.com/passgiant))**: Server-Side (Backend) Development
 - **Philsun Jo ([github link](https://github.com/CHOPHILSUN))**: App Development
 - **Dave(Me)**: Modeling, EDA, Preprocessing
-
-## **Getting Started**
---------------------------------
-To run the demo app, first run the following command in your terminal:
-
-<pre><code>git clone https://github.com/Haikoo96/aiffelton_babycry_classification.git</code></pre>
-
-Once cloned, open the Flutter Project folder named **crying_babay_2024_02_20** on VScode or Android Studio.
-Be sure to download Flutter SDK and Android Studio beforehand to add the device emulator on VScode.
-
-- Flutter SDK: [**download**](https://docs.flutter.dev/release/archive?tab=windows)
-- Android Studio: [**download**](https://developer.android.com/studio?hl=ko)
-
-For a more comprehensive guide to running the emulator, recommend watching this video: [**How to run an emulator on VScode**](https://www.youtube.com/watch?v=EhGW4UYpKSE) 
 
 ## **Acknowledgments**
 --------------------------------
