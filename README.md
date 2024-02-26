@@ -44,8 +44,8 @@ The project utilized the **Audio Spectrogram Transformer (AST)** as the primary 
 </p>
 The app was developed to analyze infant cries in real-time. The model runs on a local pc server(localhost), with inference data sent to the client side using FastAPI and ngrok. The image above describes the process of the app.
 
-#### **APP DEMO VIDEO**
-[**APP DEMO VIDEO LINK**](https://youtube.com/shorts/CRE3qGju1T0?feature=share)
+### **APP DEMO VIDEO**
+[**APP DEMO VIDEO LINK**](https://youtube.com/shorts/KYShEp-IVyE?feature=share)
 - Bear in mind that the video is in Korean
 
 
