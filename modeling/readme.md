@@ -14,14 +14,10 @@
   </tr>
   <tr>
     <td>U-Net with Classifier</td>
-    <td>58.82</td>
+    <td>58.82%</td>
   </tr>
   <tr>
     <td>AST</td>
     <td>69.23%</t>
   </tr>
 </table>
-
-## **comment**
-- AST model was by far the best, though it only reached 69%.
-- May have performed better if more data were collected.
